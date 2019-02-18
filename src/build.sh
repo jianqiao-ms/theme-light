@@ -15,7 +15,7 @@ lessc -clean-css src/less/website.less assets/website/style.css
 
 # Copy fonts
 mkdir -p assets/website/fonts
-cp -R node_modules/font-awesome/fonts/ assets/website/fonts/fontawesome/
+cp -R node_modules/@fortawesome/fontawesome-free/webfonts assets/website/fonts/fontawesome/
 
 # Copy icons
 mkdir -p assets/website/images
