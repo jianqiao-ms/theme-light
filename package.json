@@ -27,7 +27,7 @@
     "type": "git",
     "url": "https://gitlab.shangweiec.com/majianqiao/theme-light.git"
   },
-  "author": "FriendCode Inc. <contact@gitbook.com>",
+  "author": "jianqiao.ms<jianqiao.ms@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://gitlab.shangweiec.com/majianqiao/theme-light/issues"
@@ -47,7 +47,7 @@
       "showLevel": {
         "type": "boolean",
         "title": "Show level indicator in TOC",
-        "default": false
+        "default": true
       }
     }
   }
