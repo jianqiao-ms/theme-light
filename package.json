@@ -1,8 +1,8 @@
 {
-  "name": "gitbook-plugin-theme-default",
-  "description": "Default theme for GitBook",
+  "name": "gitbook-plugin-theme-light",
+  "description": "Light theme for GitBook",
   "main": "./index.js",
-  "version": "1.0.7",
+  "version": "0.0.1",
   "engines": {
     "gitbook": ">=3.0.0"
   },
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/theme-default.git"
+    "url": "https://gitlab.shangweiec.com/majianqiao/theme-light.git"
   },
   "author": "FriendCode Inc. <contact@gitbook.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GitbookIO/theme-default/issues"
+    "url": "https://gitlab.shangweiec.com/majianqiao/theme-light/issues"
   },
   "contributors": [
     {
