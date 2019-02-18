@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Cleanup folder
-rm -rf assets
+rm -rf assets _assets
 
 # Recreate folder
 mkdir -p assets/website/
