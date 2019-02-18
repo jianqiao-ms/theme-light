@@ -21,3 +21,5 @@ cp -R node_modules/font-awesome/fonts/ assets/website/fonts/fontawesome/
 mkdir -p assets/website/images
 cp node_modules/gitbook-logos/output/favicon.ico assets/website/images/
 cp node_modules/gitbook-logos/output/apple-touch-icon-152.png assets/website/images/apple-touch-icon-precomposed-152.png
+
+cp -r assets _assets
