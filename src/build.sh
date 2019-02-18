@@ -5,7 +5,6 @@ rm -rf assets
 
 # Recreate folder
 mkdir -p assets/website/
-mkdir -p assets/ebook/
 
 # Compile JS
 browserify src/js/core/index.js | uglifyjs -mc > assets/website/gitbook.js
@@ -13,12 +12,6 @@ browserify src/js/theme/index.js | uglifyjs -mc > assets/website/theme.js
 
 # Compile Website CSS
 lessc -clean-css src/less/website.less assets/website/style.css
-
-# Compile eBook CSS
-lessc -clean-css src/less/ebook.less assets/ebook/ebook.css
-lessc -clean-css src/less/pdf.less assets/ebook/pdf.css
-lessc -clean-css src/less/mobi.less assets/ebook/mobi.css
-lessc -clean-css src/less/epub.less assets/ebook/epub.css
 
 # Copy fonts
 mkdir -p assets/website/fonts
