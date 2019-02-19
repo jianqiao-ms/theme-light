@@ -14,8 +14,8 @@ browserify src/js/theme/index.js | uglifyjs -mc > _assets/website/theme.js
 lessc -clean-css src/less/website.less _assets/website/style.css
 
 # Copy fonts
-mkdir -p _assets/website/fonts/fontawesome
-cp -R node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400* _assets/website/fonts/fontawesome/
+mkdir -p _assets/website/fonts
+cp -R node_modules/@fortawesome/fontawesome-free/webfonts _assets/website/fonts/fontawesome
 
 # Copy icons
 mkdir -p _assets/website/images
