@@ -1,3 +1,5 @@
+@import "../../../node_modules/font-awesome/less/font-awesome.less";
+
 .book-summary {
     font-family: @font-family-sans;
 
@@ -88,6 +90,35 @@
             ul {
                 padding-left: @sidebar-nested-padding;
             }
+
+
+
+            a[href$=html] {
+                &:before {
+                    .fa-icon;
+                    content: @fa-var-file-o;
+                }
+            }
+            a[href$='/'] {
+                &:before {
+                    .fa-icon;
+                    content: @fa-var-folder-o;
+                }
+            }
+            &.active > a[href$=html] {
+                &:before {
+                    .fa-icon;
+                    content: @fa-var-check-square-o;
+                }
+            }
+            &.active > a[href$='/'] {
+                &:before {
+                    .fa-icon;
+                    content: @fa-var-folder-open-o;
+                }
+            }
+
+
         }
     }
 
