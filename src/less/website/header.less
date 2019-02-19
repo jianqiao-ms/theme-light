@@ -1,6 +1,11 @@
 .book-header {
     font-family: @font-family-sans;
 
+    position: fixed;
+    left:0;
+    width: 100%;
+
+
     overflow: visible;
     height: @header-height;
     padding: 0px 8px;
@@ -40,12 +45,10 @@
         font-weight: 200;
         text-align: center;
         line-height: @header-height;
-        opacity: 0;
-        .transition(opacity ease 0.4s);
+        opacity: 1;
 
         padding-left: 200px;
         padding-right: 200px;
-        .transition(opacity 0.2s ease);
 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -56,7 +59,7 @@
             text-decoration: none;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 960px) {
             display: none;
         }
 
@@ -64,12 +67,14 @@
             display: none;
         }
     }
+}
 
-    &:hover {
-        h1 {
-            opacity: 1;
-        }
-    }
+
+.header-with-summary {
+    left:300px;
+    width: -moz-calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: calc(100% - 300px);
 }
 
 .book {

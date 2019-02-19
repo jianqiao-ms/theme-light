@@ -28,6 +28,9 @@
 
 {% block body %}
 <div class="book">
+
+    {% include "website/header.html" %}
+
     <div class="book-summary">
         {% block book_sidebar %}
             {% block search_input %}{% endblock %}
@@ -43,7 +46,7 @@
         {% block book_body %}
             <div class="body-inner">
                 {% block book_inner %}
-                    {% include "website/header.html" %}
+
 
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
